@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>박영주 | 퍼포먼스 마케터 포트폴리오</title>
+  <meta name="description" content="탁월함을 향한 집요함과 소통의 가치를 믿는 마케터 박영주의 포트폴리오입니다.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- Theme Toggle -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="테마 전환">
+    <i data-lucide="sun" class="icon-sun"></i>
+    <i data-lucide="moon" class="icon-moon"></i>
+  </button>
+
+  <!-- Desktop Nav -->
+  <nav class="glass-nav" id="desktop-nav">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#stats">성과</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="메뉴 열기">
+    <i data-lucide="menu"></i>
+  </button>
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+    <button class="mobile-nav-close" id="mobile-nav-close"><i data-lucide="x"></i></button>
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#stats" class="mobile-nav-link">성과</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#education" class="mobile-nav-link">Education</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Floating Resume Download -->
+  <a href="resume.pdf" download="박영주_이력서.pdf" class="resume-fab" id="resume-fab">
+    <i data-lucide="download"></i>
+    <span class="fab-label">이력서 다운로드</span>
+  </a>
+
+  <!-- Hero -->
+  <header class="hero" id="about">
+    <div class="container hero-inner">
+      <div class="hero-content reveal">
+        <span class="badge">Data-driven Performance Marketer · 8년+</span>
+        <h1>탁월함을 향한 집요함,<br><span class="accent-text">마케터 박영주입니다.</span></h1>
+        <p class="hero-desc">데이터가 주는 확신과 사람을 향한 진심을 연결하여, <br>마케팅의 구조적 효율과 비즈니스 성장의 본질을 증명하는 마케터입니다.</p>
+        <div class="hero-tags">
+          <span>퍼포먼스 마케팅</span><span>CRM 마케팅</span><span>데이터 분석</span><span>브랜드 전략</span>
+        </div>
+        <div class="hero-ctas">
+          <a href="#stats" class="btn primary-btn">성과 보러가기 <i data-lucide="arrow-down"></i></a>
+          <a href="resume.pdf" download="박영주_이력서.pdf" class="btn outline-btn"><i data-lucide="download"></i> 이력서
+            다운로드</a>
+        </div>
+      </div>
+      <div class="hero-photo reveal">
+        <div class="photo-ring">
+          <img src="profile.jpg" alt="박영주 프로필 사진">
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="mouse-icon"></div>
+    </div>
+  </header>
+
+  <!-- Marquee -->
+  <section class="marquee-section">
+    <div class="marquee-track">
+      <span>퍼포먼스 마케팅</span><span class="sep">✦</span><span>CRM 구축</span><span class="sep">✦</span><span>데이터
+        분석</span><span class="sep">✦</span><span>브랜드 전략</span><span class="sep">✦</span><span>글로벌 마케팅</span><span
+        class="sep">✦</span><span>V-Commerce</span><span class="sep">✦</span><span>IMC 전략</span><span
+        class="sep">✦</span><span>퍼포먼스 마케팅</span><span class="sep">✦</span><span>CRM 구축</span><span
+        class="sep">✦</span><span>데이터 분석</span><span class="sep">✦</span><span>브랜드 전략</span><span
+        class="sep">✦</span><span>글로벌 마케팅</span><span class="sep">✦</span><span>V-Commerce</span><span
+        class="sep">✦</span><span>IMC 전략</span><span class="sep">✦</span>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section id="stats" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Key Performance.</h2>
+      <p class="section-sub reveal">숫자로 증명된 마케팅 결과물</p>
+      <div class="kpi-grid reveal">
+        <div class="kpi-card">
+          <div class="kpi-num" data-target="65">0</div>
+          <div class="kpi-unit">%</div>
+          <p>CPA 절감율</p><small>디쉐어 · 타겟 세그먼트 최적화</small>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-num" data-target="150">0</div>
+          <div class="kpi-unit">M</div>
+          <p>연간 비용 절감</p><small>디쉐어 · 인하우스 전환</small>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-num" data-target="1000">0</div>
+          <div class="kpi-unit">%</div>
+          <p>SNS 광고 매출 증가</p><small>SBS아카데미 · IMC 전략</small>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-num" data-target="87">0</div>
+          <div class="kpi-unit">개</div>
+          <p>통합 관리 지점</p><small>전국 에이닷 CRM 플랫폼</small>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-num" data-target="500">0</div>
+          <div class="kpi-unit">%</div>
+          <p>SNS 팔로워 증가</p><small>커커 · 글로벌 브랜드 전략</small>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-num" data-target="300">0</div>
+          <div class="kpi-unit">%</div>
+          <p>브랜드 매출 증가</p><small>프라브아 · 충성고객 전략</small>
+        </div>
+      </div>
+      <div class="charts-grid reveal">
+        <div class="chart-card">
+          <h3><i data-lucide="bar-chart-2"></i> CPA 비교 (최적화 전/후)</h3><canvas id="cpaChart"></canvas>
+        </div>
+        <div class="chart-card">
+          <h3><i data-lucide="trending-up"></i> 채널별 성장률</h3><canvas id="growthChart"></canvas>
+        </div>
+        <div class="chart-card">
+          <h3><i data-lucide="pie-chart"></i> 마케팅 채널 믹스</h3><canvas id="channelChart"></canvas>
+        </div>
+        <div class="chart-card">
+          <h3><i data-lucide="activity"></i> 업무 자동화 시간 절감</h3><canvas id="autoChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values -->
+  <section id="usp" class="section bg-alt">
+    <div class="container">
+      <h2 class="section-title reveal">Core Values.</h2>
+      <div class="usp-grid">
+        <div class="usp-card reveal">
+          <div class="usp-icon"><i data-lucide="target"></i></div>
+          <h3>탁월함 추구</h3>
+          <p>속도보다 방향을 믿습니다. 콘텐츠 하나에도 기획 의도를 담고, 데이터 사이언스를 직접 학습하며 정교한 마케팅 솔루션을 구축합니다.</p>
+        </div>
+        <div class="usp-card reveal">
+          <div class="usp-icon"><i data-lucide="users"></i></div>
+          <h3>고객 관점 확장</h3>
+          <p>동료(1차), 비즈니스 파트너(2차), 최종 소비자(3차) 모두를 고객으로 정의합니다. 신뢰할 수 있고 진실한 브랜드 가치를 전달합니다.</p>
+        </div>
+        <div class="usp-card reveal">
+          <div class="usp-icon"><i data-lucide="message-circle"></i></div>
+          <h3>소통 3원칙</h3>
+          <p><strong>미리미리</strong> — 업무 흐름이 끊기지 않게<br><strong>디테일</strong> — 이슈에 당황하지 않게<br><strong>플러스알파</strong> — 항상
+            더 나은 대안 제시</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Skills &amp; Tools.</h2>
+      <div class="skills-layout">
+        <div class="skill-group reveal">
+          <h4>마케팅 역량</h4>
+          <div class="skill-bar">
+            <div class="skill-bar-label"><span>퍼포먼스 마케팅</span><small>95%</small></div>
+            <div class="bar">
+              <div class="fill" data-w="95"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-label"><span>CRM 마케팅</span><small>90%</small></div>
+            <div class="bar">
+              <div class="fill" data-w="90"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-label"><span>IMC 전략 기획</span><small>88%</small></div>
+            <div class="bar">
+              <div class="fill" data-w="88"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-label"><span>브랜드 전략</span><small>85%</small></div>
+            <div class="bar">
+              <div class="fill" data-w="85"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-label"><span>글로벌 마케팅</span><small>80%</small></div>
+            <div class="bar">
+              <div class="fill" data-w="80"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-label"><span>V-Commerce</span><small>78%</small></div>
+            <div class="bar">
+              <div class="fill" data-w="78"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h4>데이터 &amp; 분석</h4>
+          <div class="skill-bar">
+            <div class="skill-bar-label"><span>Meta Ads Manager</span><small>95%</small></div>
+            <div class="bar">
+              <div class="fill" data-w="95"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-label"><span>Google Analytics</span><small>90%</small></div>
+            <div class="bar">
+              <div class="fill" data-w="90"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-label"><span>Kakao Moment</span><small>88%</small></div>
+            <div class="bar">
+              <div class="fill" data-w="88"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-label"><span>엑셀 VBA</span><small>85%</small></div>
+            <div class="bar">
+              <div class="fill" data-w="85"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-label"><span>Python (Data)</span><small>65%</small></div>
+            <div class="bar">
+              <div class="fill" data-w="65"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-label"><span>SQL</span><small>60%</small></div>
+            <div class="bar">
+              <div class="fill" data-w="60"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h4>툴 &amp; 플랫폼</h4>
+          <div class="tools-grid">
+            <div class="tool-chip">네이버 GFA</div>
+            <div class="tool-chip">Meta Ads</div>
+            <div class="tool-chip">Google Ads</div>
+            <div class="tool-chip">Kakao Moment</div>
+            <div class="tool-chip">Figma</div>
+            <div class="tool-chip">Notion</div>
+            <div class="tool-chip">Airbridge</div>
+            <div class="tool-chip">Appsflyer</div>
+            <div class="tool-chip">Channel Talk</div>
+            <div class="tool-chip">Braze</div>
+            <div class="tool-chip">Amplitude</div>
+            <div class="tool-chip">Slack</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section bg-alt">
+    <div class="container">
+      <h2 class="section-title reveal">Experience.</h2>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-dot current"></div>
+          <div class="tl-body">
+            <div class="tl-meta"><span class="tl-company">(주)디쉐어</span><span class="tl-badge current-badge">재직중</span>
+            </div>
+            <div class="tl-role">마케팅팀 과장 · 에이닷영어학원 / 에이닷온</div>
+            <div class="tl-period">2023.09 ~ 현재 · 약 1년 8개월</div>
+            <ul class="tl-list">
+              <li><strong>퍼포먼스 마케팅 고도화</strong> — 타겟 세그먼트 재설계 및 소재 A/B 테스트로 CPA <span class="hl">65% 절감</span></li>
+              <li><strong>인하우스 전환</strong> — 외부 대행사 구조 인하우스 전환, 연간 <span class="hl">1.5억 원</span> 절감</li>
+              <li><strong>CRM 플랫폼 구축</strong> — 전국 <span class="hl">87개 지점</span> 통합 마케팅 관리 웹페이지 기획/개발/운영</li>
+              <li><strong>채널 믹스 전략</strong> — Meta, 카카오, 네이버, Google 통합 운영 및 채널별 ROAS 분석</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <div class="tl-meta"><span class="tl-company">코리아교육그룹 / 엠노베이션</span></div>
+            <div class="tl-role">마케팅본부 대리 / PM · SBS아카데미</div>
+            <div class="tl-period">2021.05 ~ 2023.09 · 2년 4개월</div>
+            <ul class="tl-list">
+              <li><strong>IMC 전략 구축</strong> — SNS 광고 매출 전년 대비 <span class="hl">700%~1,000%</span> 성장</li>
+              <li><strong>KPI 지속 성장</strong> — 월평균 문의 전환 및 매출 <span class="hl">10~20% 상승</span> 유지</li>
+              <li><strong>VBA 자동화</strong> — 리포트 작성 시간 1시간 → <span class="hl">20분</span> 단축 (66% 절감)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <div class="tl-meta"><span class="tl-company">(주)미네랄하우스</span></div>
+            <div class="tl-role">마케팅본부 대리 · 닥터딥 / 아토딥</div>
+            <div class="tl-period">2020.12 ~ 2021.05 · 6개월</div>
+            <ul class="tl-list">
+              <li><strong>신규 브랜드 론칭</strong> — 아토딥 브랜드 아이덴티티 수립 및 런칭 마케팅 전략 기획</li>
+              <li><strong>퍼포먼스 광고</strong> — Meta / 카카오 / 네이버 채널 광고 집행 및 최적화</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <div class="tl-meta"><span class="tl-company">헤이컴온(주)</span></div>
+            <div class="tl-role">온라인사업부 매니저 · 휴테크 / 프로틴유</div>
+            <div class="tl-period">2019.12 ~ 2020.07 · 8개월</div>
+            <ul class="tl-list">
+              <li><strong>판매 퍼널 설계</strong> — 제휴 브랜드별 퍼포먼스 마케팅 판매 퍼널 전략 수립</li>
+              <li><strong>V커머스 CRM</strong> — 신규 V커머스 플랫폼의 CRM 및 마케팅 전략 기획</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <div class="tl-meta"><span class="tl-company">(주)커커</span></div>
+            <div class="tl-role">해외&amp;매스사업부 주임 · 프라브아 외</div>
+            <div class="tl-period">2018.07 ~ 2019.12 · 1년 6개월</div>
+            <ul class="tl-list">
+              <li><strong>글로벌 SNS 성장</strong> — 채널 팔로워 <span class="hl">500% 증가</span></li>
+              <li><strong>매출 성장</strong> — 프라브아 브랜드 매출 전년 대비 <span class="hl">300% 증가</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <div class="tl-meta"><span class="tl-company">(주)플레이디</span></div>
+            <div class="tl-role">마케팅 AE 인턴</div>
+            <div class="tl-period">2012.01 ~ 2012.08 · 8개월</div>
+            <ul class="tl-list">
+              <li>네이버 파워링크 / 다음 프리미엄링크 광고 비딩 및 광고주 계정 관리</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Education &amp; Certificates.</h2>
+      <div class="edu-grid">
+        <div class="edu-col reveal">
+          <h4>학력</h4>
+          <div class="edu-card">
+            <div class="edu-icon"><i data-lucide="graduation-cap"></i></div>
+            <div><strong>한양사이버대학교</strong>
+              <p>마케팅과 학사</p>
+            </div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-icon"><i data-lucide="book-open"></i></div>
+            <div><strong>데이터 사이언스 학습</strong>
+              <p>AI바이브코딩, SQL, 통계 기반 마케팅 분석</p><small>자기계발 · 지속 학습</small>
+            </div>
+          </div>
+        </div>
+        <div class="edu-col reveal">
+          <h4>자격증 &amp; 교육</h4>
+          <div class="cert-list">
+            <div class="cert-item"><i data-lucide="badge-check"></i><span>GTQ 그래픽기술자격 1급</span></div>
+            <div class="cert-item"><i data-lucide="badge-check"></i><span>Meta Blueprint 인증</span></div>
+            <div class="cert-item"><i data-lucide="badge-check"></i><span>Google Analytics 인증</span></div>
+            <div class="cert-item"><i data-lucide="badge-check"></i><span>Kakao Moment 광고 운영</span></div>
+          </div>
+        </div>
+        <div class="edu-col reveal">
+          <h4>추가 역량</h4>
+          <div class="extra-list">
+            <div class="extra-item"><span class="extra-label">어학</span><span>영어 (비즈니스 회화)</span></div>
+            <div class="extra-item"><span class="extra-label">거주지</span><span>경기 남양주시</span></div>
+            <div class="extra-item"><span class="extra-label">병역</span><span>육군 병장 만기 전역</span></div>
+            <div class="extra-item"><span class="extra-label">생년</span><span>1991년 (34세)</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section bg-alt">
+    <div class="container text-center">
+      <h2 class="section-title reveal">Let's Connect.</h2>
+      <p class="contact-sub reveal">새로운 도전을 위해 언제든 연락 주세요.</p>
+      <div class="contact-row reveal">
+        <a href="mailto:troywppark@naver.com" class="contact-btn"><i data-lucide="mail"></i> troywppark@gmail.com</a>
+        <div class="contact-btn"><i data-lucide="phone"></i> 010-4037-0928</div>
+        <a href="resume.pdf" download="박영주_이력서.pdf" class="contact-btn contact-btn-accent"><i
+            data-lucide="download"></i> 이력서 다운로드</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 박영주. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+
+</html>
